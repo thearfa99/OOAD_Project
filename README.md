@@ -1,4 +1,4 @@
-# OOAD_Project: Hospital Management System
+# OOAD Project: Hospital Management System
 
 ## Problem Definition:
 Modern hospitals struggle with inefficient, manual workflows across patient care, resource management, and billing. Key challenges include:
