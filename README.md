@@ -1,4 +1,4 @@
-# OOAD_Project
+# OOAD_Project: Hospital Management System
 
 ## Problem Definition:
 Modern hospitals struggle with inefficient, manual workflows across patient care, resource management, and billing. Key challenges include:
@@ -24,8 +24,7 @@ Key Features
     - Dashboards for administrators to analyze patient flow and revenue.
 
 ## Technical Scope:
-
-Architecture: MVC (Spring Boot for backend, Thymeleaf/JavaFX frontend).
-Database: MySQL for data persistence (patient records, appointments).
-Design Patterns: Factory (user creation), Observer (appointment alerts), Strategy (billing), Singleton (DB config).
-Security: Role-based access control (Spring Security) and HIPAA-compliant encryption.
+- Architecture: MVC (Spring Boot for backend, Thymeleaf/JavaFX frontend).
+- Database: MySQL for data persistence (patient records, appointments).
+- Design Patterns: Factory (user creation), Observer (appointment alerts), Strategy (billing), Singleton (DB config).
+- Security: Role-based access control (Spring Security) and HIPAA-compliant encryption.
