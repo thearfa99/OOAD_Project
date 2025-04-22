@@ -1,30 +1,30 @@
-# OOAD Project: Hospital Management System
-
+# Problem Statement & Synopsis
 ## Problem Definition:
-Modern hospitals struggle with inefficient, manual workflows across patient care, resource management, and billing. Key challenges include:
- - Fragmented Processes: Paper-based registration, appointment scheduling, and billing lead to delays and errors.
- - Poor Resource Coordination: Doctors’ schedules, bed availability, and medical inventory are not tracked in real time.
- - Billing Complexity: Handling insurance claims, dynamic pricing, and payment modes manually increases errors.
- - Data Silos: Patient records, prescriptions, and reports lack centralized access, impacting care quality.
+Modern hospitals struggle with disconnected departmental workflows and inefficient patient care coordination. Key challenges include:
+- Department Isolation: Specialized departments operate independently without unified patient management.
+- Test Management Complexity: Radiological and laboratory tests lack standardized ordering processes.
+- Medication Monitoring: No systematic tracking of medication side effects and patient notifications.
+- Inconsistent Patient Registration: Each department follows different intake procedures.
 
 ## Project Synopsis:
-We propose a web-based Hospital Management System (HMS) to automate workflows, enhance patient care, and optimize resource utilization.
+We've implemented a C++ Hospital Management System (HMS) that demonstrates advanced object-oriented design principles and patterns to streamline interdepartmental operations.
 Key Features
- - Patient Management: 
-    - Self-registration portal with digital profiles.
-    - Real-time appointment booking and SMS/email reminders.
- - Doctor & Staff Coordination:
-    - Schedule management and digital prescription generation.
-    - Access to centralized patient histories.
- - Billing & Insurance:
-    - Automated invoicing with support for insurance/self-pay strategies.
- - Inventory Tracking:
-    - Real-time monitoring of medicines, equipment, and beds.
- - Reporting:
-    - Dashboards for administrators to analyze patient flow and revenue.
+- Unified Hospital Structure:
+Central hospital entity with specialized departments (Cardiology, Endocrinology, Orthopedics).
+Consistent patient registration across all departments using template methods.
+- Doctor Assignment and Test Management:
+Doctors affiliated with specific departments can order standardized tests.
+Lab attendant execution of department-appropriate radiological and laboratory tests.
+Medication Management and Monitoring:
+Prescription tracking with automatic patient notification.
+Real-time updates when medication side effects change.
+- Patient Communication:
+Multi-channel notifications (email, telephone) for critical medication updates.
 
-## Technical Scope:
-- Architecture: MVC (Spring Boot for backend, Thymeleaf/JavaFX frontend).
-- Database: MySQL for data persistence (patient records, appointments).
-- Design Patterns: Factory (user creation), Observer (appointment alerts), Strategy (billing), Singleton (DB config).
-- Security: Role-based access control (Spring Security) and HIPAA-compliant encryption.
+##Technical Implementation:
+Design Patterns:
+- Singleton Pattern: Ensures single instance of radiological test services.
+- Abstract Factory Pattern: Standardizes test creation across departments.
+- Observer Pattern: Notifies patients about medication side effect changes.
+- Command Pattern: Decouples test requests from execution.
+- Template Method Pattern: Enforces consistent patient registration across departments.
