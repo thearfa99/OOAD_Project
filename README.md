@@ -21,7 +21,7 @@ Real-time updates when medication side effects change.
 - Patient Communication:
 Multi-channel notifications (email, telephone) for critical medication updates.
 
-##Technical Implementation:
+## Technical Implementation:
 Design Patterns:
 - Singleton Pattern: Ensures single instance of radiological test services.
 - Abstract Factory Pattern: Standardizes test creation across departments.
